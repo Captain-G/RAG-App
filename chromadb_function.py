@@ -30,5 +30,10 @@ def add_to_collection(text_chunks,collection):
             documents = documents,
             ids = ids
         )
+        print("---------------------")
+        print(collection)
+        print("---------------------")
+
+
     except Exception as e:
         logger.error(f"Having following issue in add_to_collection method - {e}")
